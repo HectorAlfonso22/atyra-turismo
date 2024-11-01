@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</head>
+<body onload="hora()">
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Información</a>
+                <a href="#galeria">Imágenes</a>
+                <a href="#expertos">Lugares</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Atyrá</h1>
+            <p class="copy">La cuidad más limpia del Paraguay</p>
+            
+        </div>
+        
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Información</h2>
+            <div class="contenedor-servicio">
+                <img src="img\City buildings_Two Color.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Atyrá</h3>
+                        <p> Atyrá es una antigua ciudad de Paraguay, ubicada a 61 km de la capital del país, Asunción. Ubicada sobre la cordillera de Altos, forma parte del departamento de Cordillera. Inicialmente llamada Atyha, fue fundada por el gobernador Domingo Martínez de Irala en el año 1538. Actualmente es conocida como la Capital Ecológica del Paraguay.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Toponimia</h3>
+                        <p> Inicialmente esta ciudad recibió el nombre de “Atyha”, palabra de origen guaraní. En sus comienzos era una aldea indígena, y se la denominaba así porque era el lugar de reunión o asamblea de sus miembros.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Historia</h3>
+                        <p> Fue fundada por el teniente gobernador Domingo Martínez de Irala el 4 de octubre de 1538. Dicha fundación tuvo lugar a la sombra de siete plantas de Yvapovó, en un lugar utilizado por los indígenas del lugar como punto de reunión, de ahí el nombre de “Atyhá”, que finalmente pasó a ser “Atyrá”. Ya en el año 1580, los misioneros franciscanos, dirigidos por Alonso de San Buenaventura y Fray Luis de Bolaños, realizaron la fundación religiosa de los pueblos de Altos, Atyrá, Tobatí y Yaguarón.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img\marianela-areguajpg.webp" class="img-galeria" alt="Hola">
+                    <img src="img\atyra2.jpg" class="img-galeria" alt="">
+                    <img src="img\atyra3.jpg" class="img-galeria" alt="">
+                    <img src="img\atyra4.webp" class="img-galeria" alt="">
+                    <img src="img\atyra5.webp" class="img-galeria" alt="">
+                    <img src="img\atyra6.webp" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Lugares a saber:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img\Restaurant _Isometric.svg"  alt="">
+                    <h3 class="n-expert"><a href="restaurantes.html">Comidas</a></h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img\School_Isometric.svg" alt="">
+                    <h3 class="n-expert"><a href="escuelas.html">Escuelas</a></h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img\Beach_Two Color.svg" alt="">
+                    <h3 class="n-expert"><a href="atractivos.html">Atractivos</a></h3>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">Atyrá</h2>
+                    <p>Conoce la cuidad de tus sueños</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más Info
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><div id="elem"></div> </a></li>
+                        <li><a class="dropdown-item" href="#"><div id="elem1"></div></a></li>
+                        <li><a class="dropdown-item" href="#"><div id="elem2"></div></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js\divisas.js"></script>
+    <script src="js\github.js"></script>
+    <script src="js\hora.js"></script>
+
+</body>
+</html>
